@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    background-image: linear-gradient(95deg, #3a3d40 0%, #181719 100%);
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container > p {
+    text-align: center;
+    font-size: 26px;
+    color: #be3144;
+    line-height: px;
+}
+
+/*============= Header ===============*/
+
+#navbar {
+    width: 100%;
+    background-color: #be3144;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #000;
+    z-index: 10;
+}
+
+.nav-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-content ul {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    list-style: none;
+    width: 99%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-content ul li {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.nav-content ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-content ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all .4s ease-in-out;
+}
+
+.nav-content li a:hover {
+    color: rgb(100, 70, 205);
+}
+
+/*============= Welcoming ===============*/
+
+#welcome-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+   color: #ffffff;
+   transition: all .5s ease-in-out;
+}
+
+#welcome-section:hover{
+    transform: scale(1.2);
+}
+
+/*============= projects ===============*/
+
+#projects {
+    background-color: rgb(52, 67, 122);
+    padding: 20px 0;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#projects .project-tile {
+    padding-bottom: 30px;
+    padding-top: 73px;
+}
+
+#projects > .container > h2 {
+    color: white;
+    margin-top: 73px;
+    margin-bottom: 36px;
+    font-size: 2.7rem;
+}
+
+#projects .cards {
+  display: grid;
+  grid-template-columns: 1;
+  grid-gap: 20px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+#projects .cards .card
+{
+  display: flex;
+  background: red;
+  width: 80%;
+  max-width: 100%;
+  transition: all 1s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .card:hover{
+      position: relative;
+      z-index: 10;
+}
+  
+#projects .cards .card img{
+    padding: 1vw;
+    object-fit: contain;
+    width: 100%;
+    min-height: 300px;
+    height:300px;
+    border-radius: 4px;
+}
+
+#projects .cards .card figcaption{
+    position: absolute;
+   z-index: 2;
+   color: #fff;
+   font-size: 20px;
+   bottom: 0;
+   margin: 0 auto;
+   padding: 10px 0;
+   text-align: center;
+   width: 100%;
+   background-color: rgb(0,0,0,.8);
+}
+
+#projects figcaption {
+    display: none;
+}
+
+#projects .card:hover figcaption {
+    display: block;
+}
+
+/*============= Contact ===============*/
+
+#contact {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 85px;
+}
+  
+#contact h2{
+   padding-top: 230px;
+  }
+
+#contact > .container > h2 {
+    font-size: 2.5rem;
+}
+
+  #contact > .container > p {
+    padding-bottom: 20px;
+  }
+  
+  
+#contact > .list{
+      padding-top: 17px;
+      font-size: 30px;
+      list-style: none;
+      width: 100%;
+  }
+  
+#contact > .list > a{
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+  
+#contact > .list a:last-child{
+    margin-right: 0;
+}
+  
+#contact > .list > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#contact > .list > .btn-button1::before {
+    content: "";
+    display: block;
+    background: url("https://github.com/camiua/public-images/blob/main/twitter-icon.png?raw=true") no-repeat;
+    width: 80px;
+    height: 70px;
+    float: left;
+    margin: 9 6px 0 0px;
+}
+
+#contact > .list > .btn-button2::before {
+    content: "";
+    display: block;
+    background: url("https://github.com/camiua/public-images/blob/main/github-icon.png?raw=true") no-repeat;
+    width: 80px;
+    height: 70px;
+    float: left;
+    margin: 9 6px 0 0px;
+}
+
+#contact > .list > .btn-button3::before {
+    content: "";
+    display: block;
+    background: url("https://github.com/camiua/public-images/blob/main/linkedin-otro.png?raw=true") no-repeat;
+    width: 80px;
+    height: 70px;
+    float: left;
+    margin: 9 6px 0 0px;
+}
+
+
+/*============= Footer ===============*/
+
+footer {
+    width: 100%;
+    border-top: 2px solid #be3144;
+    border-width: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    color: white;
+}
+
+/*============= Media query ===============*/
+
+@media(max-width: 453px){
+
+    #contact > .list > .btn-button1,
+    #contact > .list > .btn-button2,
+    #contact > .list > .btn-button3 {
+        font-size: 25px;
+    }
+
+    #projects .cards .card {  
+        display: block;  
+        margin-left: auto;  
+        margin-right: auto; 
+    }
+  }
+
+  @media (min-width: 600px){
+    .nav-content ul {
+      font-size: 24px;
+    }
+    .nav-content ul li a{
+        padding: 46px;
+    }
+    .nav-content ul li a:hover {
+      color: #4929bb;
+    }
+    #projects .cards {
+      grid-template-columns: 1fr;
+    }
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
+  @media(max-width: 670px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media(max-width: 636px) {
+    #projects > .container > h2 {
+        font-size: 2.3rem;
+    }
+  }
+
+  @media (min-width: 900px){
+    #projects .cards {
+      grid-template-columns: 1fr 1fr;
+
+    }
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+  }
